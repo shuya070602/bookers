@@ -4,10 +4,6 @@ class BooksController < ApplicationController
       @book = Book.new
   end
 
-  def success
-      @book = Book.find(params[:id])
-  end
-
   def show
       @book = Book.find(params[:id])
       render :show
